@@ -27,3 +27,6 @@ jobs:
     - name: Show Python script output
       run: echo ::set-output name=python_output::$(cat send_email.py.log)
       id: python_output
+      
+    - name: Use Python script output
+      run: echo "Python script output:${{ steps.python_output.outputs.python_output }}"
