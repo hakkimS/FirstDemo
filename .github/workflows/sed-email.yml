@@ -22,9 +22,11 @@ jobs:
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
       run: |
-        python send_email.py       
+        python send_email.py
+      continue-on-error: true
         
-    - name: Show Python script output
+    - if: ${{ always() }}
+      name: Show Python script output
       run: echo ::set-output name=python_output::$(cat send_email.py.log)
       id: python_output
       
