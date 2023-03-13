@@ -22,7 +22,7 @@ jobs:
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
       run: |
-        python send_email.py 2>&1 | tee send_email.log
+        python send_email.py
       continue-on-error: true
         
     - if: ${{ always() }}
