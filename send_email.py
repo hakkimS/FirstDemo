@@ -5,10 +5,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 try:
-  #email_user = os.environ.get('EMAIL_USER')
-  #email_pass = os.environ.get('EMAIL_PASS')
-  email_user = 'abdhulhakkim0@gmail.com'
-  email_pass = 'scydcayxqieyufzj'
+  email_user = os.environ.get('EMAIL_USER')
+  email_pass = os.environ.get('EMAIL_PASS')
   
   print("hai ji")
   print(email_user, flush=True)
