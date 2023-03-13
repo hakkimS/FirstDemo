@@ -18,9 +18,11 @@ jobs:
         python-version: '3.10'
 
     - name: Send email
+    
       env:
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        ACTIONS_STEP_DEBUG: true
       run: |
         python send_email.py
       continue-on-error: true
