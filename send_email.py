@@ -6,6 +6,8 @@ from email.mime.multipart import MIMEMultipart
 email_user = os.environ.get('EMAIL_USER')
 email_pass = os.environ.get('EMAIL_PASS')
 
+print(email_user)
+
 msg = MIMEMultipart()
 msg['From'] = email_user
 msg['To'] = 'abdhulhakkim786@gmail.com'
