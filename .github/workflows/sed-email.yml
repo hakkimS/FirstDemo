@@ -20,7 +20,7 @@ jobs:
     - name: Send email
     
       env:
-        EMAIL_USER: 'abdhulhakkim0@gmail.com'
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
         ACTIONS_STEP_DEBUG: true
       run: |
