@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-
+print("Hai")
 email_user = os.environ.get('EMAIL_USER')
 email_pass = os.environ.get('EMAIL_PASS')
 
