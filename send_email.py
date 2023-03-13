@@ -8,7 +8,7 @@ try:
   #email_user = os.environ.get('EMAIL_USER')
   #email_pass = os.environ.get('EMAIL_PASS')
   email_user = 'abdhulhakkim0@gmail.com'
-  email_pass = 'Qa1!fere'
+  email_pass = 'scydcayxqieyufzj'
   
   print("hai ji")
   print(email_user, flush=True)
