@@ -8,7 +8,6 @@ try:
   email_user = os.environ.get('EMAIL_USER')
   email_pass = os.environ.get('EMAIL_PASS')
   
-  print("hai ji")
   print(email_user, flush=True)
 
   msg = MIMEMultipart()
