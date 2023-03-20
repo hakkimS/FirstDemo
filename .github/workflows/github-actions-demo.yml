@@ -1,4 +1,4 @@
-#name: ${{ github.event.repository.name }}
+name: ${{ github.event.repository.name }}
 #run-name: ${{ github.actor }} in ${{ github.ref }} at ${{ github.event.repository.name }}
 on: [push]
 jobs:
