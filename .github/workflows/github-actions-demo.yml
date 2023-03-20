@@ -1,4 +1,4 @@
-name: test hi ABHI ${{ github.run_number }}
+name: test hi ABHI 
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀 in ${{ github.event.branch.name }}
 on: [push]
 jobs:
