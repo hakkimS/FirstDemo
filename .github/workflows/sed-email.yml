@@ -1,7 +1,7 @@
 name: Send email on push to main
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
 
 jobs:
