@@ -1,5 +1,5 @@
 name: test Workflow - ${{ github.ref }}
-run-name: ${{ github.actor }} is testing out GitHub Actions ${{ github.ref }}
+run-name: ${{ github.actor }} in ${{ github.ref }} at ${{ github.event.repository.name }}
 on: [push]
 jobs:
   Explore-GitHub-Actions:
