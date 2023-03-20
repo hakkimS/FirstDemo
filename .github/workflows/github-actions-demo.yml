@@ -1,4 +1,4 @@
-name: test Workflow 
+name: test Workflow - `${{ github.actor }}`
 run-name: ${{ github.actor }} in ${{ github.ref }} at ${{ github.event.repository.name }}
 on: [push]
 jobs:
