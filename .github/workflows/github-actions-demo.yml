@@ -13,6 +13,8 @@ jobs:
            echo "Workspace Value: ${{ github.workspace }}"
            echo "${repo}"
            echo ${repoName}
+           CURRENT_BRANCH=${GITHUB_REF#refs/heads/}
+           echo "Current Branch: $CURRENT_BRANCH"
         - name: Step 1
           run: echo "hello"
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
