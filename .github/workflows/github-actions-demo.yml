@@ -6,6 +6,9 @@ jobs:
     name: ${{ github.actor }} in ${{ github.ref }} at ${{ github.event.repository.name }}
     runs-on: ubuntu-latest
     steps:
+        - name: Get Repository Name
+          run: |
+           echo "Repository Name: ${{ github.repository }}"
         - name: Step 1
           run: echo "hello"
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
