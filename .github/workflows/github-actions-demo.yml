@@ -10,6 +10,7 @@ jobs:
           run: |
            repo=$(echo "Repository Name: ${{ github.repository }}")
            repoName=$(echo ${{ github.repository }} | cut -d'/' -f2)
+           echo "Workspace Value: ${{ github.workspace }}"
            echo "${repo}"
            echo ${repoName}
         - name: Step 1
