@@ -9,6 +9,7 @@ jobs:
         - name: Get Repository Name
           run: |
            repo=$(echo "Repository Name: ${{ github.repository }}")
+           repoName=$(echo ${{ github.repository }} | cut -d'/' -f2)
            echo "${repo}"
         - name: Step 1
           run: echo "hello"
