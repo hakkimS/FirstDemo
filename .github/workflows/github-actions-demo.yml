@@ -10,8 +10,12 @@ jobs:
           run: |
            repo=$(echo "Repository Name: ${{ github.repository }}")
            repoName=$(echo ${{ github.repository }} | cut -d'/' -f2)
+           git clone https://github.com/${{ github.repository }}
+           ls -la
+           cd ${repo}
+           ls -la
            echo "Workspace Value: ${{ github.workspace }}"
-           echo "${repo}"
+           echo "${repoName}"
            echo ${repoName}
            CURRENT_BRANCH=${GITHUB_REF#refs/heads/}
            echo "Current Branch: $CURRENT_BRANCH"
