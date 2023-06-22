@@ -8,8 +8,8 @@ jobs:
     steps:
         - name: Get Repository Name
           run: |
-           echo "Repository Name: ${{ github.repository }}"
-           echo "::set-output name=repository::${{ github.repository }}"
+           repo = echo "Repository Name: ${{ github.repository }}"
+           echo "{repo}"
         - name: Step 1
           run: echo "hello"
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
