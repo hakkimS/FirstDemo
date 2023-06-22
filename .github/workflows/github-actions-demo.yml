@@ -11,6 +11,7 @@ jobs:
            repo=$(echo "Repository Name: ${{ github.repository }}")
            repoName=$(echo ${{ github.repository }} | cut -d'/' -f2)
            echo "${repo}"
+           echo ${repoName}
         - name: Step 1
           run: echo "hello"
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
